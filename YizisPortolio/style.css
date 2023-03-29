@@ -30,7 +30,7 @@ header h1{
     margin-left: 45%;
 }
 
-@media screen and (max-width: 360px){header h1{
+@media screen and (max-width: 600px){header h1{
     font-size: 20px;
     margin: 30px;
     padding: 1px 1px 1px 1px;
@@ -42,7 +42,7 @@ header nav{
     margin-left: 60%;
 }
 
-@media screen and (max-width: 360px){header nav{
+@media screen and (max-width: 600px){header nav{
     margin: 0;
 }
 }
@@ -62,7 +62,7 @@ header nav a:active{
     background-color: pink;
 }
 
-@media screen and (max-width: 360px){header nav a{
+@media screen and (max-width: 600px){header nav a{
     font-size: 10px;
     display: inline-block;
     padding-left: 50px;
@@ -93,7 +93,7 @@ h2{
     padding-bottom: 10px;
 }
 
-@media screen and (max-width: 360px){h2{
+@media screen and (max-width: 600px){h2{
     font-size: 15px;
 }
 }
@@ -102,7 +102,7 @@ h2{
     font-size: 4rem;
 }
 
-@media screen and (max-width: 360px){.Hey{
+@media screen and (max-width: 600px){.Hey{
     font-size: 30px;
 }
 }
@@ -136,7 +136,7 @@ h2{
     vertical-align: middle;
 }
 
-@media screen and (max-width: 360px){.PD{
+@media screen and (max-width: 600px){.PD{
     writing-mode: horizontal-tb;
     font-size: 30px;
     text-align: center;
@@ -150,7 +150,7 @@ h2{
     padding-left: 60px;
 }
 
-@media screen and (max-width: 360px){.TTfile{
+@media screen and (max-width: 600px){.TTfile{
     text-align: center;
     width: 100%;
     height: 100%;
@@ -165,7 +165,7 @@ h2{
     font-size: 1.5em;
 }
 
-@media screen and (max-width: 360px){.PDTT h4, .PDTT h5{
+@media screen and (max-width: 600px){.PDTT h4, .PDTT h5{
     text-align: center;
     font-size: 15px;
     padding-left: 100px;
@@ -180,7 +180,7 @@ h2{
     font-size: 1em;
 }
 
-@media screen and (max-width: 360px){.PDTT h5{
+@media screen and (max-width: 600px){.PDTT h5{
     text-align: center;
     font-size: 10px;
     padding-left: 150px;
@@ -209,7 +209,7 @@ h2{
     vertical-align: middle;
 }
 
-@media screen and (max-width: 360px){.GD{
+@media screen and (max-width: 600px){.GD{
     writing-mode: horizontal-tb;
     font-size: 30px;
     text-align: center;
