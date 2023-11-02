@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
@@ -66,7 +66,7 @@ header nav a:hover::before{
 }
 
 header nav a:active{
-    color:var(--colour-three);
+    color: var(--colour-three);
 }
 
 
@@ -78,11 +78,6 @@ header nav a:active{
     padding-left: 5rem;
     font-size: 4rem;
     font-weight: 600;
-}
-
-@media screen and (max-width: 600px){.Hey{
-    font-size: 30px;
-}
 }
 
 .Hey2{
