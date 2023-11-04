@@ -7,7 +7,7 @@
 
 :root{
     --colour-one: #1f1f1f;
-    --colour-two: rgb(244, 239, 239);
+    --colour-two: #FAF8F2;
     --colour-three: #4e8045;
     --border-one: solid 2px rgb(99, 83, 162);
 }
@@ -69,13 +69,17 @@ header nav a:active{
     color: var(--colour-three);
 }
 
-/** Cards Overview **/
+@media (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
 
+/** Cards Overview **/
 .card-display{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10rem;
 }
 
 .card{
@@ -90,7 +94,7 @@ header nav a:active{
 }
 
 .card-img1:hover {
-    content: url("img/jttm_hover.png");
+    content: url("/img/jttm_hover.png");
     opacity: 100%;
  } 
 
@@ -104,7 +108,7 @@ header nav a:active{
 }
 
 .card-img2:hover {
-    content: url("img/hw_hover.png");
+    content: url("/img/hw_hover.png");
     opacity: 100%;
  } 
 
@@ -118,7 +122,7 @@ header nav a:active{
 }
 
 .card-img3:hover {
-    content: url("img/tnt_hover.png");
+    content: url("/img/tnt_hover.png");
     opacity: 100%;
  } 
 
@@ -132,7 +136,7 @@ header nav a:active{
 }
 
 .card-img4:hover {
-    content: url("img/paf_hover.png");
+    content: url("/img/paf_hover.png");
     opacity: 100%;
  } 
 
@@ -160,40 +164,145 @@ header nav a:active{
     background-color: inherit;
 }
 
-/** Journey to the Moon **/
-.JTTMsection{
-    position: relative;
-    padding-top: 20rem;
-    margin-left: 5rem;
-    margin-right: 20rem;
+/** Scroll to Snap **/
+main{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
 
+main > section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--colour-three);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+main > section:nth-child(1){
+    background: var(--colour-two);
+}
+
+/** Journey to the Moon **/
+main > section:nth-child(2), main > section:nth-child(3), main > section:nth-child(4), main > section:nth-child(5){
+    background-color: var(--colour-two);
+    animation: fadeBackground 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeBackground{
+    from{background-color: var(--colour-two);}
+    to{background-color: #ff8b96;}
+}
+
+.JTTMsection h1{
+    padding-top: 5rem;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #241930;
+}
+
+.JTTMsection h2{
+    padding-top: 5rem;
+    font-weight: 500;
+    color: #241930;
+}
+
+.JTTMsection h3, .section-3 h3, .section-4 h3, .section-5 h3{
+    padding-top: 5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-weight: 450;
+    color: #241930;
 }
 
 /** HEMWAYS **/
-.HWsection{
-    position: relative;
-    padding-top: 20rem;
-    margin-left: 5rem;
-    margin-right: 20rem;
+main > section:nth-child(6), main > section:nth-child(7), main > section:nth-child(8), main > section:nth-child(9){
+    background-color: #36477c;
+}
 
+.HWsection h1{
+    padding-top: 5rem;
+    font-size: 5rem;
+    color: #ffe3e3;
+    font-weight: 700;
+}
+
+.HWsection h2{
+    padding-top: 5rem;
+    font-weight: 500;
+    color: #ffe3e3;
+}
+
+.HWsection h3, .section-6 h3, .section-7 h3, .section-8 h3, .section-9 h3{
+    padding-top: 5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-weight: 450;
+    color: #ffe3e3;
 }
 
 /** Tech-Neck-Logy Timer **/
-.TNTsection{
-    position: relative;
-    padding-top: 20rem;
-    margin-left: 5rem;
-    margin-right: 20rem;
+main > section:nth-child(10), main > section:nth-child(11), main > section:nth-child(12), main > section:nth-child(13){
+    background: #ef8661;
+}
 
+.TNTsection h1{
+    padding-top: 5rem;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #16051e;
+}
+
+.TNTsection h2{
+    padding-top: 5rem;
+    font-weight: 500;
+    color: #16051e;
+}
+
+.TNTsection h3, .section-11 h3, .section-12 h3, .section-13 h3{
+    padding-top: 5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    color: #16051e;
+    font-weight: 450;
+}
+
+.TTFile{
+    padding: 10rem;
 }
 
 /** Paw and Foodprints **/
+main > section:nth-child(14), main > section:nth-child(15), main > section:nth-child(16), main > section:nth-child(17){
+    background: #2e420c;
+}
+
+
 .PFsection{
     position: relative;
     padding-top: 20rem;
     margin-left: 5rem;
     margin-right: 20rem;
     padding-bottom: 20rem;
+}
+
+.PFsection h1{
+    color: #f9e99d;
+}
+
+.PFsection h2{
+    color: #f9e99d;
+}
+
+.PWsection h3, .section-15 h3, .section-16 h3, .section-17 h3{
+    padding-top: 5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    color: #f9e99d;
+    font-weight: 450;
 }
 
 .PF_trailer{
