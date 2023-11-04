@@ -14,7 +14,7 @@
 
 body{
     min-height: 100vh;
-   /** background: url('yizi/img/filler.png') no-repeat; **/
+   /** background: url('./img/filler.png') no-repeat; **/
     background-size: cover;
     background-position: center;
     background-color: var(--colour-two);
