@@ -69,12 +69,6 @@ header nav a:active{
     color: var(--colour-three);
 }
 
-@media (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  }
-
 /** Cards Overview **/
 .card-display{
     display: flex;
