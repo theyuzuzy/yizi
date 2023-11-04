@@ -88,7 +88,7 @@ header nav a:active{
 }
 
 .card-img1:hover {
-    content: url("/img/jttm_hover.png");
+    content: url("yizi/img/jttm_hover.png");
     opacity: 100%;
  } 
 
@@ -102,7 +102,7 @@ header nav a:active{
 }
 
 .card-img2:hover {
-    content: url("/img/hw_hover.png");
+    content: url("yizi/img/hw_hover.png");
     opacity: 100%;
  } 
 
@@ -116,7 +116,7 @@ header nav a:active{
 }
 
 .card-img3:hover {
-    content: url("/img/tnt_hover.png");
+    content: url("yizi/img/tnt_hover.png");
     opacity: 100%;
  } 
 
@@ -130,7 +130,7 @@ header nav a:active{
 }
 
 .card-img4:hover {
-    content: url("/img/paf_hover.png");
+    content: url("yizi/img/paf_hover.png");
     opacity: 100%;
  } 
 
