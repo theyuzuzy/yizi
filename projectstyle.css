@@ -308,3 +308,16 @@ main > section:nth-child(14), main > section:nth-child(15), main > section:nth-c
 }
 
 
+@media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    }
+  }
+
+
