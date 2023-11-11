@@ -14,11 +14,28 @@
 
 body{
     min-height: 100vh;
-   /** background: url('./img/filler.png') no-repeat; **/
+   /** background: url('img/filler.png') no-repeat; **/
     background-size: cover;
     background-position: center;
     background-color: var(--colour-two);
 }
+
+
+@media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    }
+    .header{
+        background-color: olive;
+    }
+    .logo{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .navbar{
+        background-color: olive;
+    }
+  }
 
 /** Top Navigation Bar **/
 .header{
@@ -88,7 +105,7 @@ header nav a:active{
 }
 
 .card-img1:hover {
-    content: url("./img/jttm_hover.png");
+    content: url("/img/jttm_hover.png");
     opacity: 100%;
  } 
 
@@ -102,7 +119,7 @@ header nav a:active{
 }
 
 .card-img2:hover {
-    content: url("./img/hw_hover.png");
+    content: url("/img/hw_hover.png");
     opacity: 100%;
  } 
 
@@ -116,7 +133,7 @@ header nav a:active{
 }
 
 .card-img3:hover {
-    content: url("./img/tnt_hover.png");
+    content: url("/img/tnt_hover.png");
     opacity: 100%;
  } 
 
@@ -130,7 +147,7 @@ header nav a:active{
 }
 
 .card-img4:hover {
-    content: url("./img/paf_hover.png");
+    content: url("/img/paf_hover.png");
     opacity: 100%;
  } 
 
@@ -277,21 +294,35 @@ main > section:nth-child(14), main > section:nth-child(15), main > section:nth-c
 
 .PFsection{
     position: relative;
-    padding-top: 20rem;
+    padding-top: 10rem;
     margin-left: 5rem;
-    margin-right: 20rem;
-    padding-bottom: 20rem;
+    margin-right: 5rem;
+    padding-bottom: 10rem;
 }
 
 .PFsection h1{
+    padding: 1rem;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 700;
     color: #f9e99d;
 }
 
 .PFsection h2{
+    padding: 1rem;
+    font-weight: 500;
     color: #f9e99d;
 }
 
-.PWsection h3, .section-15 h3, .section-16 h3, .section-17 h3{
+.PFsection h3{
+    padding-top: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    color: #f9e99d;
+    font-weight: 450; 
+} 
+
+.section-15 h3, .section-16 h3, .section-17 h3{
     padding-top: 5rem;
     margin-left: 20rem;
     margin-right: 20rem;
@@ -301,20 +332,9 @@ main > section:nth-child(14), main > section:nth-child(15), main > section:nth-c
 
 .PF_trailer{
     align-items: center;
-    padding: 10rem;
-    margin-left: 10rem;
-    width: 100%;
+    padding: 1rem;
+    width: 40%;
     height: 100%;
 }
-
-
- @media screen and (max-width: 600px) {
-    body {
-      background-color: olive;
-    }
-    .header{
-        background-color: olive;
-    }
-  }
 
 
