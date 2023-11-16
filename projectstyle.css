@@ -14,7 +14,7 @@
 
 body{
     min-height: 100vh;
-   /** background: url('img/filler.png') no-repeat; **/
+   /** background: url('./img/filler.png') no-repeat; **/
     background-size: cover;
     background-position: center;
     background-color: var(--colour-two);
@@ -87,6 +87,16 @@ header nav a:active{
 }
 
 /** Cards Overview **/
+.cardandtext h1{
+    padding-bottom: 5rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h2{
+    font-weight: 500;
+}
+
 .card-display{
     display: flex;
     justify-content: center;
@@ -119,7 +129,7 @@ header nav a:active{
 }
 
 .card-img2:hover {
-    content: URL("./img/hw_hover.png");
+    content: URL("./img/paf_hover.png");
     opacity: 100%;
  } 
 
@@ -147,7 +157,7 @@ header nav a:active{
 }
 
 .card-img4:hover {
-    content: URL("./img/paf_hover.png");
+    content: URL("./img/hw_hover.png");
     opacity: 100%;
  } 
 
@@ -197,8 +207,10 @@ main > section:nth-child(1){
     background: var(--colour-two);
 }
 
+
+
 /** Journey to the Moon **/
-main > section:nth-child(2), main > section:nth-child(3), main > section:nth-child(4), main > section:nth-child(5){
+main > section:nth-child(2), main > section:nth-child(3), main > section:nth-child(4), main > section:nth-child(5), main > section:nth-child(6), main > section:nth-child(7){
     background-color: var(--colour-two);
     animation: fadeBackground 6s;
     animation-fill-mode: forwards;
@@ -209,132 +221,381 @@ main > section:nth-child(2), main > section:nth-child(3), main > section:nth-chi
     to{background-color: #ff8b96;}
 }
 
+/**heading**/
 .JTTMsection h1{
     padding-top: 5rem;
-    font-size: 5rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 500;
     color: #241930;
 }
 
+/**roles and brief description**/
 .JTTMsection h2{
     padding-top: 5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
     font-weight: 500;
     color: #241930;
 }
 
-.JTTMsection h3, .section-3 h3, .section-4 h3, .section-5 h3{
-    padding-top: 5rem;
+/**trailer headingn**/
+.JTTMtrailersection h2{
+    padding-bottom: 3rem;
+    font-size: 2rem;
     margin-left: 20rem;
     margin-right: 20rem;
+    font-weight: 500;
+    color: #241930;
+}
+
+/**key graphics and animation**/
+.JTTMgraphics_container img{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    font-size: 2rem;
+}
+
+/**key graphics and animation heading**/
+.JTTMgraphics_container h2{
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    font-size: 2rem;
+}
+
+/**challenges heading**/
+.section-6 h2{
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-weight: 500;
+    color: #241930;
+    font-size: 2rem;
+}
+
+/**challenges text**/
+.section-6 h3{
+    text-align: left;
+    margin-left: 10rem;
+    font-size: 1.5rem;
+}
+
+.section-6 ul{
+    text-align: left;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-size: 1rem;
+}
+
+/**roles in detail**/
+.section-7 h3{
+    text-align: center;
+    margin-left: 10rem;
+    font-size: 1.5rem;
+}
+
+.section-7 ul{
+    text-align: left;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-size: 1rem;
+}
+
+/**text**/
+.section-4 h3, .section-5 h3, .section-6 h3, .section-7 h3{
+    padding-top: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
     font-weight: 450;
     color: #241930;
 }
 
-/** HEMWAYS **/
-main > section:nth-child(6), main > section:nth-child(7), main > section:nth-child(8), main > section:nth-child(9){
-    background-color: #36477c;
+
+
+
+/** Paw and Footprints **/
+main > section:nth-child(8), main > section:nth-child(9), main > section:nth-child(11), main > section:nth-child(12), main > section:nth-child(13){
+    background-color: #2e420c;
 }
 
-.HWsection h1{
+/**heading**/
+.PFsection h1{
     padding-top: 5rem;
-    font-size: 5rem;
-    color: #ffe3e3;
-    font-weight: 700;
-}
-
-.HWsection h2{
-    padding-top: 5rem;
+    font-size: 3rem;
     font-weight: 500;
-    color: #ffe3e3;
+    color: #f9e99d;
 }
 
-.HWsection h3, .section-6 h3, .section-7 h3, .section-8 h3, .section-9 h3{
+/**roles and brief description**/
+.PFsection h2{
     padding-top: 5rem;
     margin-left: 20rem;
     margin-right: 20rem;
-    font-weight: 450;
-    color: #ffe3e3;
+    font-weight: 500;
+    color: #f9e99d;
 }
+
+/**trailer heading**/
+.PF_trailer_container h2{
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-weight: 500;
+    color: #f9e99d;
+}
+
+/**extra description background colour**/
+main > section:nth-child(10){
+    background-color: #e9f4d3;
+}
+
+/**extra description font colour**/
+.section-10 h3{
+    padding: 1rem;
+    font-weight: 450;
+    color: #2e420c;
+}
+
+/**extra description gifs**/
+.pafgraphics_container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/**challenges heading**/
+.section-12 h2{
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-weight: 500;
+    color: #f9e99d;
+    font-size: 2rem;
+}
+
+/**challenges text**/
+.section-12 h3{
+    padding-top: 5rem;
+    text-align: left;
+    font-weight: 500;
+    margin-left: 10rem;
+    font-size: 1.5rem;
+    color: #f9e99d;
+}
+
+.section-12 ul{
+    text-align: left;
+    font-weight: 500;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-size: 1rem;
+    color: #f9e99d;
+}
+
+/**roles in detail**/
+.section-13 h3{
+    padding-top: 5rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #f9e99d;
+}
+
+.section-13 ul{
+    text-align: left;
+    font-weight: 500;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-size: 1rem;
+    color: #f9e99d;
+}
+
+/**text**/
+.PFsection h3, .section-9 h3, .section-11 h3{
+    padding-top: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-weight: 450;
+    color: #f9e99d;
+}
+
+
+
 
 /** Tech-Neck-Logy Timer **/
-main > section:nth-child(10), main > section:nth-child(11), main > section:nth-child(12), main > section:nth-child(13){
+main > section:nth-child(14), main > section:nth-child(15), main > section:nth-child(16), main > section:nth-child(17), main > section:nth-child(18), main > section:nth-child(19){
     background: #ef8661;
 }
 
+/**heading**/
 .TNTsection h1{
     padding-top: 5rem;
-    font-size: 5rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 500;
     color: #16051e;
 }
 
+/**roles and brief description**/
 .TNTsection h2{
     padding-top: 5rem;
-    font-weight: 500;
-    color: #16051e;
-}
-
-.TNTsection h3, .section-11 h3, .section-12 h3, .section-13 h3{
-    padding-top: 5rem;
     margin-left: 20rem;
     margin-right: 20rem;
-    color: #16051e;
-    font-weight: 450;
-}
-
-.TTFile{
-    padding: 10rem;
-}
-
-/** Paw and Foodprints **/
-main > section:nth-child(14), main > section:nth-child(15), main > section:nth-child(16), main > section:nth-child(17){
-    background: #2e420c;
-}
-
-
-.PFsection{
-    position: relative;
-    padding-top: 10rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    padding-bottom: 10rem;
-}
-
-.PFsection h1{
-    padding: 1rem;
-    font-size: 5rem;
-    text-align: center;
-    font-weight: 700;
-    color: #f9e99d;
-}
-
-.PFsection h2{
-    padding: 1rem;
     font-weight: 500;
-    color: #f9e99d;
+    color: #16051e;
 }
 
-.PFsection h3{
-    padding-top: 1rem;
+/**challenges heading**/
+.section-18 h2{
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-weight: 500;
+    color: #16051e;
+    font-size: 2rem;
+}
+
+/**challenges text**/
+.section-18 h3{
+    padding-top: 5rem;
+    text-align: left;
+    font-weight: 500;
+    margin-left: 10rem;
+    font-size: 1.5rem;
+    color: #16051e;
+}
+
+.section-18 ul{
+    text-align: left;
+    font-weight: 500;
     margin-left: 10rem;
     margin-right: 10rem;
-    color: #f9e99d;
-    font-weight: 450; 
-} 
+    font-size: 1rem;
+    color: #16051e;
+}
 
-.section-15 h3, .section-16 h3, .section-17 h3{
+/**roles in detail**/
+.section-19 h3{
+    padding-top: 5rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #16051e;
+}
+
+.section-19 ul{
+    text-align: left;
+    font-weight: 500;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-size: 1rem;
+    color: #16051e;
+}
+
+/**text**/
+.TNTsection h3, .section-15 h3, .section-16 h3, .section-17 h3{
     padding-top: 5rem;
     margin-left: 20rem;
     margin-right: 20rem;
-    color: #f9e99d;
+    color: #16051e;
     font-weight: 450;
 }
 
-.PF_trailer{
-    align-items: center;
-    padding: 1rem;
-    width: 40%;
-    height: 100%;
+/** HEMWAYS **/
+main > section:nth-child(20), main > section:nth-child(21), main > section:nth-child(22), main > section:nth-child(23), main > section:nth-child(24), main > section:nth-child(25){
+    background: #36477c;
 }
+
+/**heading**/
+.HWsection h1{
+    padding-top: 5rem;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    color: #ffe3e3;
+}
+
+/**roles and brief description**/
+.HWsection h2{
+    padding-top: 5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-weight: 500;
+    color: #ffe3e3;
+}
+
+/**trailer heading**/
+.hwwalkthrough h2{
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-weight: 500;
+    color: #ffe3e3;
+}
+
+/**challenges heading**/
+.section-24 h2{
+    padding-top: 5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-weight: 500;
+    color: #ffe3e3;
+    font-size: 2rem;
+}
+
+/**challenges text**/
+.section-24 h3{
+    padding-top: 5rem;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 10rem;
+    font-size: 1.5rem;
+    color: #ffe3e3;
+}
+
+.section-24 ul{
+    text-align: left;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-size: 1rem;
+    color: #ffe3e3;
+}
+
+/**roles in detail**/
+.section-25 h3{
+    padding-top: 5rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #ffe3e3;
+}
+
+.section-25 ul{
+    text-align: left;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-size: 1rem;
+    color: #ffe3e3;
+}
+
+.section-22 img{
+    padding: 1rem;
+    width: 25%;
+}
+
+.section-23 img{
+    padding: 2rem;
+    width: 35%;
+}
+
+/**text**/
+.section-20 h3, .section-21 h3, .section-22 h3, .section-23 h3{
+    padding-top: 5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    color: #ffe3e3;
+    font-weight: 450;
+}
+
+
 
 
